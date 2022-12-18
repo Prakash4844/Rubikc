@@ -12,7 +12,6 @@ public class RotateBigCube : MonoBehaviour
     private float speed = 200f;
     public GameObject target;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -24,8 +23,6 @@ public class RotateBigCube : MonoBehaviour
     {
         Swipe();
         Drag();
-
-
     }
 
     void Drag()
@@ -47,8 +44,6 @@ public class RotateBigCube : MonoBehaviour
             }
         }
         previousMousePosition = Input.mousePosition;
-
-
     }
 
     void Swipe()
