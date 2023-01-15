@@ -9,7 +9,7 @@ public class RotateBigCube : MonoBehaviour
     private Vector2 currentSwipe;
     private Vector3 previousMousePosition;
     private Vector3 mouseDelta;
-    private float speed = 200f;
+    private float speed = 230f;
     public GameObject target;
 
     // Start is called before the first frame update
