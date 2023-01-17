@@ -45,3 +45,19 @@ The following packages were added:
   com.unity.timeline@1.5.5
   com.unity.ugui@1.0.0
   com.unity.visualscripting@1.6.1
+
+=== Tue Jan 17 14:38:29 2023
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were added:
+  com.unity.ai.navigation@1.1.1
+The following packages were updated:
+  com.unity.collab-proxy from version 1.5.7 to 1.17.7
+  com.unity.ide.rider from version 3.0.7 to 3.0.16
+  com.unity.ide.visualstudio from version 2.0.8 to 2.0.16
+  com.unity.ide.vscode from version 1.2.3 to 1.2.5
+  com.unity.test-framework from version 1.1.24 to 1.1.33
+  com.unity.timeline from version 1.5.5 to 1.7.2
+  com.unity.visualscripting from version 1.6.1 to 1.7.8
