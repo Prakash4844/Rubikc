@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -32,7 +32,7 @@ public class ReadCube : MonoBehaviour
         cubeState = FindObjectOfType<CubeState>();
         cubeMap = FindObjectOfType<CubeMap>();
         ReadState();
-        // CubeState.started = true;
+        CubeState.started = true;
        
 
     }
@@ -40,7 +40,7 @@ public class ReadCube : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ReadState();
+
     }
 
     public void ReadState()
