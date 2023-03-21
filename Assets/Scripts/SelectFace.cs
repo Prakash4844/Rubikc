@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,6 +8,7 @@ public class SelectFace : MonoBehaviour
     private ReadCube readCube;
     private int layerMask = 1 << 8;
 
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +19,7 @@ public class SelectFace : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !CubeState.autoRotating)
         {
             // read the current state of the cube            
             readCube.ReadState();

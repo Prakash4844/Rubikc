@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,8 +9,9 @@ public class RotateBigCube : MonoBehaviour
     private Vector2 currentSwipe;
     private Vector3 previousMousePosition;
     private Vector3 mouseDelta;
-    private float speed = 230f;
-    public GameObject target;
+    private float speed = 200f;
+    public GameObject target;    
+
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,8 @@ public class RotateBigCube : MonoBehaviour
     {
         Swipe();
         Drag();
+
+
     }
 
     void Drag()
@@ -44,6 +47,8 @@ public class RotateBigCube : MonoBehaviour
             }
         }
         previousMousePosition = Input.mousePosition;
+
+
     }
 
     void Swipe()
@@ -92,32 +97,32 @@ public class RotateBigCube : MonoBehaviour
 
     bool LeftSwipe(Vector2 swipe)
     {
-        return swipe.x < 0 && swipe.y > -0.5f && swipe.y < 0.5f;
+        return currentSwipe.x < 0 && currentSwipe.y > -0.5f && currentSwipe.y < 0.5f;
     }
 
     bool RightSwipe(Vector2 swipe)
     {
-        return swipe.x > 0 && swipe.y > -0.5f && swipe.y < 0.5f;
+        return currentSwipe.x > 0 && currentSwipe.y > -0.5f && currentSwipe.y < 0.5f;
     }
 
     bool UpLeftSwipe(Vector2 swipe)
     {
-        return swipe.y > 0 && swipe.x < 0f;
+        return currentSwipe.y > 0 && currentSwipe.x < 0f;
     }
 
     bool UpRightSwipe(Vector2 swipe)
     {
-        return swipe.y > 0 && swipe.x > 0f;
+        return currentSwipe.y > 0 && currentSwipe.x > 0f;
     }
 
     bool DownLeftSwipe(Vector2 swipe)
     {
-        return swipe.y < 0 && swipe.x < 0f;
+        return currentSwipe.y < 0 && currentSwipe.x < 0f;
     }
 
     bool DownRightSwipe(Vector2 swipe)
     {
-        return swipe.y < 0 && swipe.x > 0f;
+        return currentSwipe.y < 0 && currentSwipe.x > 0f;
     }
-
+          
 }
